@@ -14,6 +14,13 @@
     </Header>
     <Snippet>
       <Declarations>
+		<Literal Editable="true">
+          <ID>comment</ID>
+          <ToolTip>Function comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
         <Literal Editable="true">
           <ID>category</ID>
           <ToolTip>UI category name</ToolTip>
@@ -57,7 +64,8 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[UFUNCTION(BlueprintCallable, Category="$category$")
+      <Code Language="cpp"><![CDATA[/* $comment$ */
+	  UFUNCTION(BlueprintCallable, Category="$category$")
 $virtual$ $returnType$ $name$($args$) $const$;
 $selected$ $end$]]></Code>
     </Snippet>

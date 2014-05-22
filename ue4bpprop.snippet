@@ -14,6 +14,13 @@
     </Header>
     <Snippet>
       <Declarations>
+		<Literal Editable="true">
+          <ID>comment</ID>
+          <ToolTip>Property comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
         <Literal Editable="true">
           <ID>category</ID>
           <ToolTip>UI category name</ToolTip>
@@ -36,7 +43,8 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="$category$")
+      <Code Language="cpp"><![CDATA[/* $comment$ */
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="$category$")
 $type$ $name$;
 $selected$ $end$]]></Code>
     </Snippet>
