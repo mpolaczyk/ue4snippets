@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>ue4bpprop</Title>
+      <Author>http://mpolaczyk.pl</Author>
+      <Description>Unreal Engine blueprint property snippet</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ue4bpprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>category</ID>
+          <ToolTip>UI category name</ToolTip>
+          <Default>MyProject</Default>
+          <Function>
+          </Function>
+        </Literal>
+		<Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+		<Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>Name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="$category$")
+$type$ $name$;
+$selected$ $end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
