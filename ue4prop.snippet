@@ -5,18 +5,18 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ue4bpevent</Title>
+      <Title>ue4prop</Title>
       <Author>http://mpolaczyk.pl</Author>
-      <Description>Unreal Engine blueprint implementable event snippet</Description>
+      <Description>Unreal Engine blueprint property snippet</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ue4bpevent</Shortcut>
+      <Shortcut>ue4prop</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
 		<Literal Editable="true">
           <ID>comment</ID>
-          <ToolTip>Function comment</ToolTip>
+          <ToolTip>Property comment</ToolTip>
           <Default>Comment</Default>
           <Function>
           </Function>
@@ -29,37 +29,23 @@
           </Function>
         </Literal>
 		<Literal Editable="true">
-          <ID>virtual</ID>
-          <ToolTip>Virtual modifier</ToolTip>
-          <Default>virtual</Default>
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>Type</Default>
           <Function>
           </Function>
         </Literal>
 		<Literal Editable="true">
           <ID>name</ID>
-          <ToolTip>Function name</ToolTip>
-          <Default>FunctionName</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>args</ID>
-          <ToolTip>Arguments</ToolTip>
-          <Default>args</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>const</ID>
-          <ToolTip>Const function modifier</ToolTip>
-          <Default>const</Default>
+          <ToolTip>Property name</ToolTip>
+          <Default>Name</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
       <Code Language="cpp"><![CDATA[/* $comment$ */
-UFUNCTION(BlueprintImplementableEvent, Category="$category$")
-$virtual$ void On$name$($args$) $const$;
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="$category$")
+$type$ $name$;
 $selected$ $end$]]></Code>
     </Snippet>
   </CodeSnippet>

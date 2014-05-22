@@ -5,39 +5,43 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ue4bpstruct</Title>
+      <Title>ue4interface</Title>
       <Author>http://mpolaczyk.pl</Author>
-      <Description>Unreal Engine struct snippet</Description>
+      <Description>Unreal Engine interface snippet</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ue4bpstruct</Shortcut>
+      <Shortcut>ue4interface</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>comment</ID>
-          <ToolTip>Struct comment</ToolTip>
+          <ToolTip>Interface comment</ToolTip>
           <Default>Comment</Default>
           <Function>
           </Function>
         </Literal>
-		<Literal Editable="true">
+        <Literal Editable="true">
           <ID>name</ID>
-          <ToolTip>Struct name</ToolTip>
+          <ToolTip>Interface name</ToolTip>
           <Default>Foo</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
       <Code Language="cpp"><![CDATA[/* $comment$ */
-USTRUCT()
-struct F$name$
+UINTERFACE()
+class U$name$ : public UInterface
 {
-	GENERATED_USTRUCT_BODY()
-	
-	$selected$ $end$
+	GENERATED_UINTERFACE_BODY()
 };
-]]></Code>
+
+class I$name$
+{
+	GENERATED_IINTERFACE_BODY()
+	  
+	$selected$ $end$
+};]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
