@@ -14,6 +14,13 @@
     </Header>
     <Snippet>
       <Declarations>
+		<Literal Editable="true">
+          <ID>comment</ID>
+          <ToolTip>Enum comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
         <Literal Editable="true">
           <ID>namespace</ID>
           <ToolTip>Enum namespace name</ToolTip>
@@ -29,6 +36,13 @@
           </Function>
         </Literal>
 		<Literal Editable="true">
+          <ID>elem1comment</ID>
+          <ToolTip>Enum element 1 comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
+		<Literal Editable="true">
           <ID>elem1displayName</ID>
           <ToolTip>First enum element display name</ToolTip>
           <Default>DisplayName</Default>
@@ -36,11 +50,13 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[UENUM()
+      <Code Language="cpp"><![CDATA[/* $comment$ */
+UENUM()
 namespace E$namespace$
 {
 	enum Type
 	{
+		/* $elem1comment$ */
 		$elem1name$ UMETA(DisplayName="$elem1displayName$"),
 		$select$ $end$
 	};
