@@ -50,14 +50,15 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/* $comment$ */
+      <Code Language="cpp"><![CDATA[/**
+ * $comment$ 
+ */
 UENUM()
 namespace E$namespace$
 {
 	enum Type
 	{
-		/* $elem1comment$ */
-		$elem1name$ UMETA(DisplayName="$elem1displayName$"),
+		$elem1name$ UMETA(DisplayName="$elem1displayName$"), /**< $elem1comment$ */
 		$select$ $end$
 	};
 }]]></Code>

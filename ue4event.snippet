@@ -21,6 +21,20 @@
           <Function>
           </Function>
         </Literal>
+		<Literal Editable="true">
+          <ID>commentParam</ID>
+          <ToolTip>Function comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
+		<Literal Editable="true">
+          <ID>commentReturn</ID>
+          <ToolTip>Function comment</ToolTip>
+          <Default>Comment</Default>
+          <Function>
+          </Function>
+        </Literal>
         <Literal Editable="true">
           <ID>category</ID>
           <ToolTip>UI category name</ToolTip>
@@ -57,7 +71,11 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/* $comment$ */
+      <Code Language="cpp"><![CDATA[/**
+ * $comment$ 
+ * @param $commentParam$
+ * @return $commentReturn$
+ */
 UFUNCTION(BlueprintImplementableEvent, Category="$category$")
 $virtual$ void On$name$($args$) $const$;
 $selected$ $end$]]></Code>
