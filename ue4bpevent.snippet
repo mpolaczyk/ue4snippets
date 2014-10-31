@@ -5,12 +5,12 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ue4func</Title>
+      <Title>ue4bpevent</Title>
       <Author>http://mpolaczyk.pl</Author>
-      <Description>Unreal Engine blueprint callable function snippet</Description>
+      <Description>Unreal Engine blueprint implementable event snippet</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ue4func</Shortcut>
+      <Shortcut>ue4bpevent</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -28,13 +28,6 @@
           <Function>
           </Function>
         </Literal>
-		<Literal Editable="true">
-          <ID>commentReturn</ID>
-          <ToolTip>Function comment</ToolTip>
-          <Default>Comment</Default>
-          <Function>
-          </Function>
-        </Literal>
         <Literal Editable="true">
           <ID>category</ID>
           <ToolTip>UI category name</ToolTip>
@@ -46,13 +39,6 @@
           <ID>virtual</ID>
           <ToolTip>Virtual modifier</ToolTip>
           <Default>virtual</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>returnType</ID>
-          <ToolTip>Function return type</ToolTip>
-          <Default>void</Default>
           <Function>
           </Function>
         </Literal>
@@ -79,13 +65,12 @@
         </Literal>
       </Declarations>
       <Code Language="cpp"><![CDATA[/**
-	 * $comment$ 
-	 * @param $commentParam$
-	 * @return $commentReturn$
-	 */
-	UFUNCTION(BlueprintCallable, Category="$category$")
-	$virtual$ $returnType$ $name$($args$) $const$;
-	$selected$ $end$]]></Code>
+ * $comment$ 
+ * @param $commentParam$
+ */
+UFUNCTION(BlueprintImplementableEvent, Category="$category$")
+$virtual$ void On$name$($args$) $const$;
+$selected$ $end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

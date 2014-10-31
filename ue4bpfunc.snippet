@@ -5,12 +5,12 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ue4event</Title>
+      <Title>ue4bpfunc</Title>
       <Author>http://mpolaczyk.pl</Author>
-      <Description>Unreal Engine blueprint implementable event snippet</Description>
+      <Description>Unreal Engine blueprint callable function snippet</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ue4event</Shortcut>
+      <Shortcut>ue4bpfunc</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -50,6 +50,13 @@
           </Function>
         </Literal>
 		<Literal Editable="true">
+          <ID>returnType</ID>
+          <ToolTip>Function return type</ToolTip>
+          <Default>void</Default>
+          <Function>
+          </Function>
+        </Literal>
+		<Literal Editable="true">
           <ID>name</ID>
           <ToolTip>Function name</ToolTip>
           <Default>FunctionName</Default>
@@ -72,13 +79,13 @@
         </Literal>
       </Declarations>
       <Code Language="cpp"><![CDATA[/**
-	 * $comment$ 
-	 * @param $commentParam$
-	 * @return $commentReturn$
-	 */
-	UFUNCTION(BlueprintImplementableEvent, Category="$category$")
-	$virtual$ void On$name$($args$) $const$;
-	$selected$ $end$]]></Code>
+ * $comment$ 
+ * @param $commentParam$
+ * @return $commentReturn$
+ */
+UFUNCTION(BlueprintCallable, Category="$category$")
+$virtual$ $returnType$ $name$($args$) $const$;
+$selected$ $end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
