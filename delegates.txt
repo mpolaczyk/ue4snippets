@@ -1,0 +1,69 @@
+Info: DelegateCombinations.h
+
+ type_name - type of delegate instance
+ arg_type - type of value returned by delegate
+ arg_name - name of delegate
+   
+ 1. Template 
+ 
+ DECLARE_{modifiers}_{params}({type_name}, ); 
+   
+ 1. Events.
+ 
+DECLARE_EVENT(type_name);
+DECLARE_EVENT_OneParam(type_name, arg_type1);
+DECLARE_EVENT_TwoParams(type_name, arg_type1, arg_type2);
+DECLARE_EVENT_ThreeParams(type_name, arg_type1, arg_type2, arg_type3,);
+DECLARE_EVENT_FourParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4);
+DECLARE_EVENT_FiveParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5);
+DECLARE_EVENT_SixParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6);
+DECLARE_EVENT_SevenParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7);
+DECLARE_EVENT_EightParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7, arg_type8);
+  
+ 1. Delegates.
+
+DECLARE_DELEGATE(type_name);
+DECLARE_DELEGATE_OneParam(type_name, arg_type1);
+DECLARE_DELEGATE_TwoParams(type_name, arg_type1, arg_type2);
+DECLARE_DELEGATE_ThreeParams(type_name, arg_type1, arg_type2, arg_type3,);
+DECLARE_DELEGATE_FourParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4);
+DECLARE_DELEGATE_FiveParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5);
+DECLARE_DELEGATE_SixParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6);
+DECLARE_DELEGATE_SevenParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7);
+DECLARE_DELEGATE_EightParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7, arg_type8);
+
+ 1. Multicast delegates.
+
+DECLARE_MULTICAST_DELEGATE(type_name);
+DECLARE_MULTICAST_DELEGATE_OneParam(type_name, arg_type1);
+DECLARE_MULTICAST_DELEGATE_TwoParams(type_name, arg_type1, arg_type2);
+DECLARE_MULTICAST_DELEGATE_ThreeParams(type_name, arg_type1, arg_type2, arg_type3,);
+DECLARE_MULTICAST_DELEGATE_FourParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4);
+DECLARE_MULTICAST_DELEGATE_FiveParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5);
+DECLARE_MULTICAST_DELEGATE_SixParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6);
+DECLARE_MULTICAST_DELEGATE_SevenParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7);
+DECLARE_MULTICAST_DELEGATE_EightParams(type_name, arg_type1, arg_type2, arg_type3, arg_type4, arg_type5, arg_type6, arg_type7, arg_type8);
+ 
+ 1. Dynamic delegates.
+ 
+DECLARE_DYNAMIC_DELEGATE(type_name);
+DECLARE_DYNAMIC_DELEGATE_OneParam(type_name, arg_type1, arg_name1);
+DECLARE_DYNAMIC_DELEGATE_TwoParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2);
+DECLARE_DYNAMIC_DELEGATE_ThreeParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3);
+DECLARE_DYNAMIC_DELEGATE_FourParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4);
+DECLARE_DYNAMIC_DELEGATE_FiveParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5);
+DECLARE_DYNAMIC_DELEGATE_SixParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6);
+DECLARE_DYNAMIC_DELEGATE_SevenParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6, arg_type7, arg_name7);
+DECLARE_DYNAMIC_DELEGATE_EightParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6, arg_type7, arg_name7, arg_type8, arg_name8);
+
+ 1. Dynamic multicast delegates
+ 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(type_name)
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(type_name, arg_type1, arg_name1);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_SixParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_SevenParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6, arg_type7, arg_name7);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_EightParams(type_name, arg_type1, arg_name1, arg_type2, arg_name2, arg_type3, arg_name3, arg_type4, arg_name4, arg_type5, arg_name5, arg_type6, arg_name6, arg_type7, arg_name7, arg_type8, arg_name8);
