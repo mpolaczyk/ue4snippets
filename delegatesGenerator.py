@@ -26,31 +26,31 @@ class Delegate:
         print(Template('%s%s%s%s%s' % (a,b,c,d,e)).substitute(kind = self.kind, name = self.name))
 
 
+class DelegateGeneratorTest:
 
+    def __init__(self, maxParams):
+        self.maxParams = maxParams
+    
+    def TestEvents(self):
+        for n in range(1, self.maxParams + 2):
+            Delegate('EVENT', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
 
+    
+    def TestDelegates(self):
+        for n in range(1, self.maxParams + 2):
+            Delegate('DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
 
+    
+    def TestMulticastDeleates(self):
+        for n in range(1, self.maxParams + 2):
+            Delegate('MULTICAST_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
 
-# EVENTS
-print('=== EVENTS')
-for n in range(1,8+2):
-    Delegate('EVENT', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
+    
+    def TestDynamicDelegates(self):
+        for n in range(1, self.maxParams + 2):
+            Delegate('DYNAMIC_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], ['$$type{0}$$'.format(p) for p in range(1,n)]).Generate()
 
-# DELEGATES
-print('=== DELEGATES')
-for n in range(1,8+2):
-    Delegate('DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
-	
-# MULTICAST DELEGATES
-print('=== MULTICAST DELEGATES')
-for n in range(1,8+2):
-    Delegate('MULTICAST_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], []).Generate()
-	
-# DYNAMIC DELEGATES
-print('=== DYNAMIC DELEGATES')
-for n in range(1,8+2):
-    Delegate('DYNAMIC_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], ['$$type{0}$$'.format(p) for p in range(1,n)]).Generate()
-	
-# DYNAMIC MULTICAST DELEGATES
-print('=== DYNAMIC MULTICAST DELEGATES')
-for n in range(1,8+2):
-    Delegate('DYNAMIC_MULTICAST_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], ['$$type{0}$$'.format(p) for p in range(1,n)]).Generate()
+    
+    def TestDynamicMulticastDelegates(self):
+        for n in range(1, self.maxParams + 2):
+            Delegate('DYNAMIC_MULTICAST_DELEGATE', '$name$', ['$$arg{0}$$'.format(p) for p in range(1,n)], ['$$type{0}$$'.format(p) for p in range(1,n)]).Generate()
