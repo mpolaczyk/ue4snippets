@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+
+from snippetsGenerator import DelegateSnippet
+
+def Write(file, text):
+    file = open(file, "w")
+    file.write(text)
+    file.close()
+
+Write("ue4eve.snippet",  DelegateSnippet('ue4eve',  'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve',  'EVENT', '$$owningType$$', 0, 0).Generate())
+Write("ue4eve1.snippet", DelegateSnippet('ue4eve1', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve1', 'EVENT', '$$owningType$$', 1, 0).Generate())
+Write("ue4eve2.snippet", DelegateSnippet('ue4eve2', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve2', 'EVENT', '$$owningType$$', 2, 0).Generate())
+Write("ue4eve3.snippet", DelegateSnippet('ue4eve3', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve3', 'EVENT', '$$owningType$$', 3, 0).Generate())
+Write("ue4eve4.snippet", DelegateSnippet('ue4eve4', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve4', 'EVENT', '$$owningType$$', 4, 0).Generate())
+Write("ue4eve5.snippet", DelegateSnippet('ue4eve5', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve5', 'EVENT', '$$owningType$$', 5, 0).Generate())
+Write("ue4eve6.snippet", DelegateSnippet('ue4eve6', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve6', 'EVENT', '$$owningType$$', 6, 0).Generate())
+Write("ue4eve7.snippet", DelegateSnippet('ue4eve7', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve7', 'EVENT', '$$owningType$$', 7, 0).Generate())
+Write("ue4eve8.snippet", DelegateSnippet('ue4eve8', 'http://mpolaczyk.pl', 'Unreal Engine Event snippet', 'ue4eve8', 'EVENT', '$$owningType$$', 8, 0).Generate())
+
+Write("ue4del.snippet",  DelegateSnippet('ue4del',  'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del',  'DELEGATE', '', 0, 0).Generate())
+Write("ue4del1.snippet", DelegateSnippet('ue4del1', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del1', 'DELEGATE', '', 1, 0).Generate())
+Write("ue4del2.snippet", DelegateSnippet('ue4del2', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del2', 'DELEGATE', '', 2, 0).Generate())
+Write("ue4del3.snippet", DelegateSnippet('ue4del3', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del3', 'DELEGATE', '', 3, 0).Generate())
+Write("ue4del4.snippet", DelegateSnippet('ue4del4', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del4', 'DELEGATE', '', 4, 0).Generate())
+Write("ue4del5.snippet", DelegateSnippet('ue4del5', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del5', 'DELEGATE', '', 5, 0).Generate())
+Write("ue4del6.snippet", DelegateSnippet('ue4del6', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del6', 'DELEGATE', '', 6, 0).Generate())
+Write("ue4del7.snippet", DelegateSnippet('ue4del7', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del7', 'DELEGATE', '', 7, 0).Generate())
+Write("ue4del8.snippet", DelegateSnippet('ue4del8', 'http://mpolaczyk.pl', 'Unreal Engine Delegate snippet', 'ue4del8', 'DELEGATE', '', 8, 0).Generate())
+
+Write("ue4delmul.snippet",  DelegateSnippet('ue4delmul',  'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul',  'MULTICAST_DELEGATE', '', 0, 0).Generate())
+Write("ue4delmul1.snippet", DelegateSnippet('ue4delmul1', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul1', 'MULTICAST_DELEGATE', '', 1, 1).Generate())
+Write("ue4delmul2.snippet", DelegateSnippet('ue4delmul2', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul2', 'MULTICAST_DELEGATE', '', 2, 2).Generate())
+Write("ue4delmul3.snippet", DelegateSnippet('ue4delmul3', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul3', 'MULTICAST_DELEGATE', '', 3, 3).Generate())
+Write("ue4delmul4.snippet", DelegateSnippet('ue4delmul4', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul4', 'MULTICAST_DELEGATE', '', 4, 4).Generate())
+Write("ue4delmul5.snippet", DelegateSnippet('ue4delmul5', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul5', 'MULTICAST_DELEGATE', '', 5, 5).Generate())
+Write("ue4delmul6.snippet", DelegateSnippet('ue4delmul6', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul6', 'MULTICAST_DELEGATE', '', 6, 6).Generate())
+Write("ue4delmul7.snippet", DelegateSnippet('ue4delmul7', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul7', 'MULTICAST_DELEGATE', '', 7, 7).Generate())
+Write("ue4delmul8.snippet", DelegateSnippet('ue4delmul8', 'http://mpolaczyk.pl', 'Unreal Engine Multicast Delegate snippet', 'ue4delmul8', 'MULTICAST_DELEGATE', '', 8, 8).Generate())
+
+Write("ue4deldyn.snippet",  DelegateSnippet('ue4deldyn',  'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn',  'DYNAMIC_DELEGATE', '', 0, 0).Generate())
+Write("ue4deldyn1.snippet", DelegateSnippet('ue4deldyn1', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn1', 'DYNAMIC_DELEGATE', '', 1, 1).Generate())
+Write("ue4deldyn2.snippet", DelegateSnippet('ue4deldyn2', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn2', 'DYNAMIC_DELEGATE', '', 2, 2).Generate())
+Write("ue4deldyn3.snippet", DelegateSnippet('ue4deldyn3', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn3', 'DYNAMIC_DELEGATE', '', 3, 3).Generate())
+Write("ue4deldyn4.snippet", DelegateSnippet('ue4deldyn4', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn4', 'DYNAMIC_DELEGATE', '', 4, 4).Generate())
+Write("ue4deldyn5.snippet", DelegateSnippet('ue4deldyn5', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn5', 'DYNAMIC_DELEGATE', '', 5, 5).Generate())
+Write("ue4deldyn6.snippet", DelegateSnippet('ue4deldyn6', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn6', 'DYNAMIC_DELEGATE', '', 6, 6).Generate())
+Write("ue4deldyn7.snippet", DelegateSnippet('ue4deldyn7', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn7', 'DYNAMIC_DELEGATE', '', 7, 7).Generate())
+Write("ue4deldyn8.snippet", DelegateSnippet('ue4deldyn8', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Delegate snippet', 'ue4deldyn8', 'DYNAMIC_DELEGATE', '', 8, 8).Generate())
+
+Write("ue4deldynmul.snippet",  DelegateSnippet('ue4deldynmul',  'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul',  'DYNAMIC_MULTICAST_DELEGATE', '', 0, 0).Generate())
+Write("ue4deldynmul1.snippet", DelegateSnippet('ue4deldynmul1', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul1', 'DYNAMIC_MULTICAST_DELEGATE', '', 1, 1).Generate())
+Write("ue4deldynmul2.snippet", DelegateSnippet('ue4deldynmul2', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul2', 'DYNAMIC_MULTICAST_DELEGATE', '', 2, 2).Generate())
+Write("ue4deldynmul3.snippet", DelegateSnippet('ue4deldynmul3', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul3', 'DYNAMIC_MULTICAST_DELEGATE', '', 3, 3).Generate())
+Write("ue4deldynmul4.snippet", DelegateSnippet('ue4deldynmul4', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul4', 'DYNAMIC_MULTICAST_DELEGATE', '', 4, 4).Generate())
+Write("ue4deldynmul5.snippet", DelegateSnippet('ue4deldynmul5', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul5', 'DYNAMIC_MULTICAST_DELEGATE', '', 5, 5).Generate())
+Write("ue4deldynmul6.snippet", DelegateSnippet('ue4deldynmul6', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul6', 'DYNAMIC_MULTICAST_DELEGATE', '', 6, 6).Generate())
+Write("ue4deldynmul7.snippet", DelegateSnippet('ue4deldynmul7', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul7', 'DYNAMIC_MULTICAST_DELEGATE', '', 7, 7).Generate())
+Write("ue4deldynmul8.snippet", DelegateSnippet('ue4deldynmul8', 'http://mpolaczyk.pl', 'Unreal Engine Dynamic Multicast Delegate snippet', 'ue4deldynmul8', 'DYNAMIC_MULTICAST_DELEGATE', '', 8, 8).Generate())
