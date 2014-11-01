@@ -1,13 +1,5 @@
 Info: DelegateCombinations.h
 
- type_name - type of delegate instance
- arg_type - type of value returned by delegate
- arg_name - name of delegate
-   
- 1. Template 
- 
- DECLARE_{modifiers}_{params}({type_name}, ); 
-   
  1. Events.
  
 DECLARE_EVENT(owning_type, type_name);
