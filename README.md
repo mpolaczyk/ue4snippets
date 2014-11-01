@@ -3,6 +3,7 @@ ue4snippets
 
 Visual Studio snippets for Unreal Engine C++ based projects.
 Original article: http://mpolaczyk.pl/visual-studio-snippets-for-ue4/
+Original repository: https://github.com/mpolaczyk/ue4snippets
 
 How to install snippets ?
 ===========
